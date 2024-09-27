@@ -1,8 +1,6 @@
 export default function Star(props) {
   const starIcon = props.isFilled ? "star-filled.png" : "star-empty.png";
-  const buttonLabel = props.isFilled
-    ? "Unmark as favorite"
-    : "Mark as favorite";
+  const buttonLabel = props.isFilled ? "Unmark as favorite" : "Mark as favorite";
   return (
     <button
       onClick={props.handleClick}
