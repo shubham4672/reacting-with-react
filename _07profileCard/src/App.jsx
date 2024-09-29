@@ -4,10 +4,10 @@ import "./App.css";
 
 function App() {
   const [contact, setContact] = useState({
-    firstName: "John",
-    lastName: "Doe",
+    firstName: "Shubham",
+    lastName: "Sharma",
     phone: "+1 (719) 555-1212",
-    email: "itsmyrealname@example.com",
+    email: "example@gmail.com",
     isFavorite: true,
   });
 
