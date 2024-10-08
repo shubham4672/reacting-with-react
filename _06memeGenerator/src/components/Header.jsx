@@ -1,4 +1,5 @@
 import Troll from "../assets/troll-face.png";
+
 export default function Header() {
   return (
     <header className='header'>
