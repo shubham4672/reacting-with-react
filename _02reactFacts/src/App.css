@@ -30,7 +30,7 @@ body {
   width: 46vw;
   height: 70vh;
   border-radius: 10px;
-  background-color: #161a1e;
+  background-color: #fff;
   position: relative;
   background-image: url("../src/assets/reactjs_javascript_library_atom_atomic_react-512.webp");
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2b2b2b;
+  background-color: #fff;
   width: 46vw;
   height: 14vh;
   padding: 0 2vw;
@@ -52,8 +52,68 @@ body {
   left: 0;
 }
 
-.nav p {
-  color: #fff;
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2b283a;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark {
+  background-color: #21222a;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2b283a;
+}
+
+nav.dark .toggler--light {
+  color: #918e9b;
+}
+
+.toggler--dark {
+  color: #d5d4d8;
+}
+
+nav.dark .toggler-dark {
+  color: #ffffff;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
 }
 
 .logo {
@@ -72,7 +132,7 @@ body {
   height: 35vh;
   width: 46vw;
   margin: 30vh 5vw;
-  color: #fff;
+  color: #000;
 }
 
 .p5 li::marker {
