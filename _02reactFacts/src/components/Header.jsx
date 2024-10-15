@@ -1,9 +1,10 @@
+import React from "react";
 import Image from "../assets/react.svg";
 
 export default function Header(props) {
   return (
-    <nav className='nav'>
-      <div className='logo'>
+    <nav className={props.darkMode ? "dark" : ""}>
+      <div className='nav--logo_icon'>
         <img src={Image} alt='React Logo' />
         <strong>ReactFacts</strong>
       </div>
