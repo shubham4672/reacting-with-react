@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.random button {
+  margin: 6vh 11vw;
+  width: 10vw;
+  height: 7vh;
+}
+
+.details {
+  width: 100vw;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 50vh;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.details h2 {
+  font-size: 4rem;
+}
+
+.details p {
+  font-size: 2.5rem;
+}
