@@ -8,6 +8,7 @@ function App() {
   const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     async function fetchData() {
@@ -31,15 +32,19 @@ function App() {
     }
     fetchData();
   }, []);
-  console.log(pokemon);
+
+  const searchPokemon = pokemon.filter((currPokemon) => {
+    return currPokemon.name.toLowerCase().includes(search?.toLowerCase() ?? "");
+  });
+
   if (loading) {
     return <h1>Loading...</h1>;
   } else {
     return (
       <>
         <Title />
-        <SearchInput />
-        <ShowCards pokemonData={pokemon} />
+        <SearchInput search={search} setSearch={setSearch} />
+        <ShowCards pokemonData={searchPokemon} />
       </>
     );
   }
