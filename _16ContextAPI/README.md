@@ -1,0 +1,1 @@
+To overcome the problem of prop drilling here I'm using content API to handle it as the React documentation says.
